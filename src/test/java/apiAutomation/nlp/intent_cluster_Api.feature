@@ -21,7 +21,7 @@ Feature: NLP cluster Api
 
   Scenario: Intent cluster with agentResponse is true
     * def apiheader = {Authorization:'Basic S29tcG9zZTpOTFA=',Content-Type:'application/json'}
-    * def query_param = {applicationId:'14d4ba62306d657d0c5170928d94a7ce0', agentResponse:'true'}
+    * def query_param = {applicationId:'14d4ba62306d657d0c5170928d94a7ce0', agentResponse: 'true'}
     Given headers apiheader
     When path '/intent/cluster'
     And params query_param
